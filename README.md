@@ -5,7 +5,7 @@ Yelp is a very democratic review system where customers share their honest opini
 
 Some restaurants dislike this system because it does not account for the areas in which they either succeed or fall behind during a diner's experience.  A reviewer may give a restaurant 1-star review for service, but the food may be excellent, or vice versa.  Those reviewers that do try to take this into account must weight their own rating based on their own personal beliefs, and thus leave an unbalanced review without a proper guide.
 
-While Yelp is an absolute treasure trove of user data, due to its highly subjective nature it is difficult to properly classify a score using traditional Machine Learning techniques.  With almost 60% of our selected restaurants in New York City rated on Yelp rated at 4, and 93% rated at 4 or higher, one would surmise that New York is the absolute Mecca of fine dining.  Having dined here for over 20 years, we the authors can assure you this is in fact, not the case. 
+While Yelp is an absolute treasure trove of user data, its highly subjective nature makes difficult to properly classify a score using traditional Machine Learning techniques.  With almost 60% of our selected restaurants in New York City rated on Yelp rated at 4, and 93% rated at 4 or higher, one would surmise that New York is the absolute Mecca of fine dining.  Having dined here for over 20 years, we the authors can assure you this is in fact, not the case. 
 
 Armed with this information, and the data we obtained, we then focus on answering the below questions.
 
