@@ -28,6 +28,20 @@ In order to determine sentiment, we first ran a VADER Sentiment analysis of our 
 
 <img src='images/vadersnapshot.png'>
 
+Further breakdown showed an unusually high distribution of positive sentiment scores and neutral sentiment scores, and a very low distribution of negative sentiment scores.
+
+positive
+<img src=''>
+negative
+<img src=''>
+neutral
+<img src=''>
+compound
+<img src=''>
+
+This was also paired with the overweighted distribution of 4-star reviews, as seen below:
+
+<img src=''>
 
 
 
