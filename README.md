@@ -48,12 +48,32 @@ Given the breakdown, we elected to separate the restaurants along 4.5-Star revie
 <img src='images/good_bad_histo.png'>
 
 ### FINDINGS
-	TRAINING	TESTING	
-MODEL	Parameters	Accuracy	F1 Score
-Naive Bayes	Gaussian/Bernoulli	58% / 52%	59%/54%
-KNN	n=2 ; Tuning using GridSearch	52%	40%
-Decision Trees	Tuning using GridSearch	57%	58%
-Bagged Trees	n=20;Tuning using GridSearch	64%	63%
-Random Forests	Tuning - bootstrap	66%	63%
-XG Boost	Genetic Search	65%	65%
-SVM	Kernel Linear; c=6	56%	57%
+
+Our findings were directed towards properly classifying if a restaurant was good or bad based on Vader's sentiment analysis.  We removed the compound score as superfluous, and wanted to train our model on the levels of negative/neutral/positive sentiment in order to determine the best restaurant.  In addition, we wished to pick the model that would best reduce Type I errors in exchange for Type II errors, as we feel, going to a restaurant rated poorly and discovering it is actually good would be more desireable than going to a restaurant known to be good and discovering it is bad.  The below is a summary of the models we ran:
+
+#### Models
+
+Dummy Classifer: 52.3%
+
+
+Naive Bayes:	Gaussian/Bernoulli  	
+Accuracy Score: 58% / 52%  	
+F1 Score: 59%/54%  
+KNN: n=2; Tuning using GridSearch  	
+Accuracy Score: 52%  	
+F1 Score: 40%  
+Decision Trees: Tuning using GridSearch  
+Accuracy Score: 57%  
+F1 Score: 58%  
+Bagged Trees: n=20;Tuning using GridSearch  
+Accuracy Score: 64%  
+F1 Score: 63%  
+Random ForestsL: Tuning - bootstrap  
+Accuracy Score: 66%  
+F1 Score: 63%  
+XG Boost: Genetic Search  
+Accuracy Score; 65%  
+F1 Score: 65%  
+SVM: Kernel Linear; c=6	 
+Accuracy Score: 56%  
+F1 Score: 57%
