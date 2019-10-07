@@ -56,12 +56,12 @@ Our findings were directed towards properly classifying if a restaurant was good
 Dummy Classifer: 52.3%
 
 
-Naive Bayes:	Gaussian/Bernoulli  	
-Accuracy Score: 58% / 52%  	
+Naive Bayes: Gaussian/Bernoulli    	
+Accuracy Score: 58% / 52%    	
 F1 Score: 59%/54%  
-KNN: n=2; Tuning using GridSearch  	
-Accuracy Score: 52%  	
-F1 Score: 40%  
+KNN: n=2; Tuning using GridSearch   	
+Accuracy Score: 52%   	
+F1 Score: 40%   
 Decision Trees: Tuning using GridSearch  
 Accuracy Score: 57%  
 F1 Score: 58%  
