@@ -31,13 +31,13 @@ In order to determine sentiment, we first ran a VADER Sentiment analysis of our 
 Further breakdown showed an unusually high distribution of positive sentiment scores and neutral sentiment scores, and a very low distribution of negative sentiment scores.
 
 positive  
-<img src='images/neg_sentgraph.png'>
+<img src='images/neg_sentgraph.png'>  
 negative  
-<img src='images/neu_sentgraph.png'>
+<img src='images/neu_sentgraph.png'>  
 neutral  
-<img src='images/pos_sentgraph.png'>
+<img src='images/pos_sentgraph.png'>  
 compound  
-<img src='images/comp_sentgraph.png'>
+<img src='images/comp_sentgraph.png'>  
 
 This was also paired with the overweighted distribution of 4-star reviews, as seen below:
 
