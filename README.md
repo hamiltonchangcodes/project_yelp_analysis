@@ -43,7 +43,7 @@ This was also paired with the overweighted distribution of 4-star reviews, as se
 
 <img src='images/star_hist.png'>
 
-Given the breakdown, we elected to separate the restaurants along 4.5-Star reviews as being "Good" restaurants, and anything 4-star and below as a "Bad" restaurant.  Below is the histogram of the two classes:
+Given the breakdown, we elected to separate the restaurants along 4.5-Star reviews and above as being "Good" restaurants, and anything 4-star and below as a "Bad" restaurant.  Below is the histogram of the two classes:
 
 <img src='images/good_bad_histo.png'>
 
