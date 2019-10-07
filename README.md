@@ -26,6 +26,7 @@ Post cleaning for missing values, we were left with 1625 restaurants, and 32,500
 
 In order to determine sentiment, we first ran a VADER Sentiment analysis of our collected reviews.  The VADER Sentiment Analysis broke down each review and returned 4 scores which reported the percentage of Negative, Neutral, and Positive sentiment, and a final compounded score.  Our resulting data looked like the below:
 
+<img src='images/vadersnapshot.png'>
 
 
 
