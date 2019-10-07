@@ -74,6 +74,6 @@ F1 Score: 63%
 XG Boost: Genetic Search  
 Accuracy Score; 65%  
 F1 Score: 65%  
-SVM: Kernel Linear; c=6	 
+SVM: Kernel Linear; c=6  
 Accuracy Score: 56%  
 F1 Score: 57%
