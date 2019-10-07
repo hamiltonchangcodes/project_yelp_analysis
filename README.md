@@ -77,3 +77,11 @@ F1 Score: 65%
 SVM: Kernel Linear; c=6  
 Accuracy Score: 56%  
 F1 Score: 57%
+
+Random Forest and XGBoost produced the highest Accuracy and F1 scores, and so we selected Random Forest for its highest accuracy.
+
+## Final Thoughts
+
+This project has been particularly eye-opening for us.  Yelp has long been considered the best source for business reviews, but with some basic review and EDA, we have discovered it in fact is a font of mediocrity.  People motivated to post a review are usually those who had an incredible experience at a given restaurant, or those who had a terrible experience, with a smattering of those looking to leave a true review in between.  Given these swings, all scores eventually settle into a normal distribution centered around 4 stars, making it very difficult to train a model based purely on the star rating.
+
+Given further opportunity, we would like to try using another sentiment analyzer to see if we can further fine tune our scores, and perhaps increasing the size of our data set.
