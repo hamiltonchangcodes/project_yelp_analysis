@@ -56,11 +56,11 @@ Our findings were directed towards properly classifying if a restaurant was good
 Dummy Classifer: 52.3%
 
 
-Naive Bayes: Gaussian/Bernoulli    	
-Accuracy Score: 58% / 52%    	
+Naive Bayes: Gaussian/Bernoulli   
+Accuracy Score: 58% / 52%  
 F1 Score: 59%/54%  
-KNN: n=2; Tuning using GridSearch   	
-Accuracy Score: 52%   	
+KNN: n=2; Tuning using GridSearch  
+Accuracy Score: 52%  
 F1 Score: 40%   
 Decision Trees: Tuning using GridSearch  
 Accuracy Score: 57%  
@@ -68,7 +68,7 @@ F1 Score: 58%
 Bagged Trees: n=20;Tuning using GridSearch  
 Accuracy Score: 64%  
 F1 Score: 63%  
-Random ForestsL: Tuning - bootstrap  
+Random Forests: Tuning - bootstrap  
 Accuracy Score: 66%  
 F1 Score: 63%  
 XG Boost: Genetic Search  
