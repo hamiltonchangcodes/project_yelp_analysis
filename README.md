@@ -48,4 +48,12 @@ Given the breakdown, we elected to separate the restaurants along 4.5-Star revie
 <img src='images/good_bad_histo.png'>
 
 ### FINDINGS
-
+	                  TRAINING	                          TESTING	
+MODEL	          Parameters	                        Accuracy	  F1 Score
+Naive Bayes	    Gaussian/Bernoulli	              58% / 52%	  59%/54%
+KNN	n=2 ;       Tuning using GridSearch	            52%	        40%
+Decision Trees	Tuning using GridSearch             57%	        58%
+Bagged Trees	  n=20;Tuning using GridSearch        64%	        63%
+Random Forests	Tuning - bootstrap	                66%	        63%
+XG Boost	      Genetic Search	                    65%	        65%
+SVM	            Kernel Linear; c=6	                56%	        57%
