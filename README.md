@@ -24,7 +24,64 @@ Post cleaning for missing values, we were left with 1625 restaurants, and 32,500
 
 ### METHODOLOGY AND EDA
 
+In order to determine sentiment, we first ran a VADER Sentiment analysis of our collected reviews.  The VADER Sentiment Analysis broke down each review and returned 4 scores which reported the percentage of Negative, Neutral, and Positive sentiment, and a final compounded score.  Our resulting data looked like the below:
 
+<img src='images/vadersnapshot.png'>
+
+Further breakdown showed an unusually high distribution of positive sentiment scores and neutral sentiment scores, and a very low distribution of negative sentiment scores.
+
+positive  
+<img src='images/pos_sentgraph.png'>  
+negative  
+<img src='images/neg_sentgraph.png'>   
+neutral  
+<img src='images/neu_sentgraph.png'>   
+compound  
+<img src='images/comp_sentgraph.png'>  
+
+This was also paired with the overweighted distribution of 4-star reviews, as seen below:
+
+<img src='images/star_hist.png'>
+
+Given the breakdown, we elected to separate the restaurants along 4.5-Star reviews and above as being "Good" restaurants, and anything 4-star and below as a "Bad" restaurant.  Below is the histogram of the two classes:
+
+<img src='images/good_bad_histo.png'>
 
 ### FINDINGS
 
+Our findings were directed towards properly classifying if a restaurant was good or bad based on Vader's sentiment analysis.  We removed the compound score as superfluous, and wanted to train our model on the levels of negative/neutral/positive sentiment in order to determine the best restaurant.  In addition, we wished to pick the model that would best reduce Type I errors in exchange for Type II errors, as we feel, going to a restaurant rated poorly and discovering it is actually good would be more desireable than going to a restaurant known to be good and discovering it is bad.  The below is a summary of the models we ran:
+
+#### Models
+
+Dummy Classifer: 52.3%
+
+
+Naive Bayes: Gaussian/Bernoulli   
+Accuracy Score: 58% / 52%  
+F1 Score: 59%/54%  
+KNN: n=2; Tuning using GridSearch  
+Accuracy Score: 52%  
+F1 Score: 40%   
+Decision Trees: Tuning using GridSearch  
+Accuracy Score: 57%  
+F1 Score: 58%  
+Bagged Trees: n=20;Tuning using GridSearch  
+Accuracy Score: 64%  
+F1 Score: 63%  
+Random Forests: Tuning - bootstrap  
+Accuracy Score: 66%  
+F1 Score: 63%  
+XG Boost: Genetic Search  
+Accuracy Score; 65%  
+F1 Score: 65%  
+SVM: Kernel Linear; c=6  
+Accuracy Score: 56%  
+F1 Score: 57%
+
+Random Forest and XGBoost produced the highest Accuracy and F1 scores, and so we selected Random Forest for its highest accuracy.
+
+## Final Thoughts
+
+This project has been particularly eye-opening for us.  Yelp has long been considered the best source for business reviews, but with some basic review and EDA, we have discovered it in fact is a font of mediocrity.  People motivated to post a review are usually those who had an incredible experience at a given restaurant, or those who had a terrible experience, with a smattering of those looking to leave a true review in between.  Given these swings, all scores eventually settle into a normal distribution centered around 4 stars, making it very difficult to train a model based purely on the star rating.
+
+Given further opportunity, we would like to try using another sentiment analyzer to see if we can further fine tune our scores, and perhaps increasing the size of our data set.
